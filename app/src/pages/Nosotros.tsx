@@ -145,7 +145,7 @@ function BusinessModelSection() {
               Modelo de Negocio
             </h2>
             <p className="text-[17px] font-body text-[#5C6B5C] leading-[1.7] mb-6">
-              La empresa brinda soluciones integrales de procesamiento y acondicionamiento de frutas y hortalizas frescas para el mercado nacional e internacional. Ademas de ofrecer productos terminados de calidad exportacion, tambien brinda servicios de maquila para empresas que requieran procesar su propia materia prima bajo estandares profesionales. Nuestro modelo se basa en la flexibilidad, la calidad garantizada y la atencion personalizada a cada cliente.
+              La empresa brinda soluciones integrales de procesamiento y acondicionamiento de frutas y hortalizas frescas para el mercado nacional e internacional. Ademas de ofrecer productos terminados de calidad exportacion, tambien brinda servicios de maquila para empresas que requieran procesar su propia materia prima bajo estandares profesionales. Nuestro modelo se basa en la flexibilidad, la calidad garantizada y la atencion personalizada a uno de nuestros clientes.
             </p>
             <Link
               to="/contacto"
