@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-   "homepage": "https://alexirri14.github.io",
+  "homepage": "https://alexirri14.github.io",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
