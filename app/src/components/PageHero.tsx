@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import heroimage from '@/assets/hero-slide-1.jpg';
+import heroimage from '../assets/hero-slide-1.jpg';
 interface PageHeroProps {
   title: string;
   breadcrumb: string;
