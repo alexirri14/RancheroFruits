@@ -1,12 +1,12 @@
 import { Link } from 'react-router';
-
+import heroimage from '@/assets/hero-slide-1.jpg';
 interface PageHeroProps {
   title: string;
   breadcrumb: string;
   backgroundImage?: string;
 }
 
-export default function PageHero({ title, breadcrumb, backgroundImage = '/images/hero-slide-1.jpg' }: PageHeroProps) {
+export default function PageHero({ title, breadcrumb, backgroundImage = heroimage }: PageHeroProps) {
   return (
     <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
       <img
