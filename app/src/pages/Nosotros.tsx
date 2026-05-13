@@ -27,7 +27,7 @@ function AboutFullSection() {
           </div>
           <div>
             <img
-              src="/RancheroFruits/images/about-valley.jpg"
+              src="/images/about-valley.jpg"
               alt="Valle agricola peruano"
               className="w-full aspect-[4/3] object-cover rounded-xl shadow-[0_8px_32px_rgba(26,46,26,0.12)]"
             />
@@ -129,7 +129,7 @@ function BusinessModelSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <img
-              src="/RancheroFruits/images/about-team.jpg"
+              src="/images/about-team.jpg"
               alt="Equipo de trabajo de RancheroFruits"
               className="w-full aspect-[4/3] object-cover rounded-xl shadow-[0_8px_32px_rgba(26,46,26,0.12)]"
             />
