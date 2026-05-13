@@ -1,12 +1,12 @@
 import type { Product, StarProduct } from '@/types';
 
 export const starProducts: StarProduct[] = [
-  { id: 'arandanos', name: 'Arandanos', category: 'Fruta fresca', image: '/images/product-arandanos.jpg' },
-  { id: 'maracuya', name: 'Maracuya', category: 'Fruta fresca', image: '/images/product-maracuya.jpg' },
-  { id: 'aji-amarillo', name: 'Aji amarillo', category: 'Hortaliza', image: '/images/product-aji-amarillo.jpg' },
-  { id: 'curcuma', name: 'Curcuma', category: 'Tuberculo', image: '/images/product-curcuma.jpg' },
-  { id: 'lucuma', name: 'Lucuma', category: 'Fruta fresca', image: '/images/product-lucuma.jpg' },
-  { id: 'maiz-morado', name: 'Maiz morado', category: 'Hortaliza', image: '/images/product-maiz-morado.jpg' },
+  { id: 'arandanos', name: 'Arandanos', category: 'Fruta fresca', image: '/RancheroFruits/images/product-arandanos.jpg' },
+  { id: 'maracuya', name: 'Maracuya', category: 'Fruta fresca', image: '/RancheroFruits/images/product-maracuya.jpg' },
+  { id: 'aji-amarillo', name: 'Aji amarillo', category: 'Hortaliza', image: '/RancheroFruits/images/product-aji-amarillo.jpg' },
+  { id: 'curcuma', name: 'Curcuma', category: 'Tuberculo', image: '/RancheroFruits/images/product-curcuma.jpg' },
+  { id: 'lucuma', name: 'Lucuma', category: 'Fruta fresca', image: '/RancheroFruits/images/product-lucuma.jpg' },
+  { id: 'maiz-morado', name: 'Maiz morado', category: 'Hortaliza', image: '/RancheroFruits/images/product-maiz-morado.jpg' },
 ];
 
 export const productDetails: Record<string, Product> = {

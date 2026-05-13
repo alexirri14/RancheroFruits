@@ -3,10 +3,10 @@ import { Link } from 'react-router';
 import { ChevronDown } from 'lucide-react';
 
 const slides = [
-  { image: '/images/hero-slide-1.jpg', alt: 'Valle agricola peruano' },
-  { image: '/images/hero-slide-2.jpg', alt: 'Instalacion de packing moderna' },
-  { image: '/images/hero-slide-3.jpg', alt: 'Frutas tropicales frescas' },
-  { image: '/images/hero-slide-4.jpg', alt: 'Granja costera peruana' },
+  { image: '/RancheroFruits/images/hero-slide-1.jpg', alt: 'Valle agricola peruano' },
+  { image: '/RancheroFruits/images/hero-slide-2.jpg', alt: 'Instalacion de packing moderna' },
+  { image: '/RancheroFruits/images/hero-slide-3.jpg', alt: 'Frutas tropicales frescas' },
+  { image: '/RancheroFruits/images/hero-slide-4.jpg', alt: 'Granja costera peruana' },
 ];
 
 export default function HeroSlider() {

@@ -8,12 +8,12 @@ import type { Product } from '@/types';
 type Category = 'hortalizas' | 'frutas' | 'tuberculos';
 
 const categoryImages: Record<string, string> = {
-  'Aji amarillo': '/images/product-aji-amarillo.jpg',
-  'Arandanos': '/images/product-arandanos.jpg',
-  'Curcuma': '/images/product-curcuma.jpg',
-  'Lucuma': '/images/product-lucuma.jpg',
-  'Maiz morado': '/images/product-maiz-morado.jpg',
-  'Maracuya': '/images/product-maracuya.jpg',
+  'Aji amarillo': '/RancheroFruits/images/product-aji-amarillo.jpg',
+  'Arandanos': '/RancheroFruits/images/product-arandanos.jpg',
+  'Curcuma': '/RancheroFruits/images/product-curcuma.jpg',
+  'Lucuma': '/RancheroFruits/images/product-lucuma.jpg',
+  'Maiz morado': '/RancheroFruits/images/product-maiz-morado.jpg',
+  'Maracuya': '/RancheroFruits/images/product-maracuya.jpg',
 };
 
 const getProductImage = (name: string): string => {
@@ -56,7 +56,7 @@ function ProcessLinesSection() {
           {/* Linea Primaria */}
           <div className="bg-[#F7F5F0] rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(26,46,26,0.08)]">
             <img
-              src="/images/linea-primaria.jpg"
+              src="/RancheroFruits/images/linea-primaria.jpg"
               alt="Linea Primaria"
               className="w-full aspect-video object-cover"
             />
@@ -73,7 +73,7 @@ function ProcessLinesSection() {
           {/* Linea de Arandanos */}
           <div className="bg-[#F7F5F0] rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(26,46,26,0.08)]">
             <img
-              src="/images/linea-arandanos.jpg"
+              src="/RancheroFruits/images/linea-arandanos.jpg"
               alt="Linea de Arandanos"
               className="w-full aspect-video object-cover"
             />

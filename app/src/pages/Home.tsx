@@ -54,7 +54,7 @@ function AboutSection() {
           {/* Image */}
           <div className="relative">
             <img
-              src="/images/about-main.jpg"
+              src="/RancheroFruits/images/about-main.jpg"
               alt="Instalaciones de RancheroFruits"
               className="w-full aspect-[4/3] object-cover rounded-xl shadow-[0_8px_32px_rgba(26,46,26,0.12)]"
             />
@@ -94,7 +94,7 @@ function OfferingsSection() {
           {/* Maquila Card */}
           <div className="bg-[#F7F5F0] rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(26,46,26,0.08)] hover:shadow-[0_8px_32px_rgba(26,46,26,0.12)] transition-shadow duration-300">
             <img
-              src="/images/service-maquila.jpg"
+              src="/RancheroFruits/images/service-maquila.jpg"
               alt="Servicio de Maquila"
               className="w-full aspect-video object-cover"
             />
@@ -117,7 +117,7 @@ function OfferingsSection() {
           {/* Products Card */}
           <div className="bg-[#F7F5F0] rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(26,46,26,0.08)] hover:shadow-[0_8px_32px_rgba(26,46,26,0.12)] transition-shadow duration-300">
             <img
-              src="/images/hero-slide-3.jpg"
+              src="/RancheroFruits/images/hero-slide-3.jpg"
               alt="Productos Terminados"
               className="w-full aspect-video object-cover"
             />
