@@ -54,7 +54,7 @@ function AboutSection() {
           {/* Image */}
           <div className="relative">
             <img
-              src="/RancheroFruits/images/about-main.jpg"
+              src="/images/about-main.jpg"
               alt="Instalaciones de RancheroFruits"
               className="w-full aspect-[4/3] object-cover rounded-xl shadow-[0_8px_32px_rgba(26,46,26,0.12)]"
             />
