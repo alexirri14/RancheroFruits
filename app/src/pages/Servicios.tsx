@@ -1,5 +1,4 @@
-import { Link } from 'react-router';
-import { Check } from 'lucide-react';
+
 import PageHero from '@/components/PageHero';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
