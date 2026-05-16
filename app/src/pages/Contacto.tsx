@@ -186,15 +186,13 @@ function MapSection() {
   return (
     <section className="w-full">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249744.04476252486!2d-77.15258865!3d-12.0262548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e4a!2sPaijan%2C%20La%20Libertad%2C%20Peru!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-        width="100%"
-        height="400"
-        style={{ border: 0, filter: 'grayscale(20%)' }}
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d656.7625568083654!2d-79.37571556005958!3d-7.789352688476041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1778927945524!5m2!1ses!2spe"
+        style={{ filter: 'grayscale(20%)' }}
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
         title="Ubicacion de RancheroFruits en La libertad, Peru"
-        className="border-y border-[#D4CFC4]"
+        className="border-y border-[#D4CFC4] w-full h-96"
       />
     </section>
   );
