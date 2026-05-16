@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import { ChevronDown } from 'lucide-react';
 
 const slides = [
-  { image: '/RancheroFruits/images/logo-1.jpeg', alt: 'Valle agricola peruano' },
+  { image: '/RancheroFruits/images/Logo-1.jpg', alt: 'Logo Empresa' },
   { image: '/RancheroFruits/images/hero-slide-2.jpg', alt: 'Instalacion de packing moderna' },
   { image: '/RancheroFruits/images/hero-slide-3.jpg', alt: 'Frutas tropicales frescas' },
   { image: '/RancheroFruits/images/hero-slide-4.jpg', alt: 'Granja costera peruana' },
