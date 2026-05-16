@@ -1,0 +1,16 @@
+{
+  "name": "ranchero-fruits",
+  "private": true,
+  "version": "0.0.0",
+  "packageManager": "pnpm@9.15.0",
+  "workspaces": [
+    "app"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter app dev",
+    "build": "pnpm --filter app build",
+    "lint": "pnpm --filter app lint",
+    "preview": "pnpm --filter app preview",
+    "deploy": "pnpm --filter app deploy"
+  }
+}
