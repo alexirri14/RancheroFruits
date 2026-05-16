@@ -15,6 +15,7 @@ export function useScrollReveal<T extends HTMLElement>(
   options: ScrollRevealOptions = {}
 ) {
   const ref = useRef<T>(null);
+  const revealed = useRef(false);
 
   useEffect(() => {
     const el = ref.current;
@@ -32,12 +33,14 @@ export function useScrollReveal<T extends HTMLElement>(
 
     const children = el.children.length > 1 ? Array.from(el.children) : [el];
 
-    gsap.set(children, {
-      y,
-      x,
-      opacity: 0,
-      ...(scale !== undefined ? { scale } : {}),
-    });
+    if (!revealed.current) {
+      gsap.set(children, {
+        y,
+        x,
+        opacity: 0,
+        ...(scale !== undefined ? { scale } : {}),
+      });
+    }
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -63,7 +66,7 @@ export function useScrollReveal<T extends HTMLElement>(
     observer.observe(el);
 
     return () => observer.disconnect();
-  }, [options]);
+  }, [JSON.stringify(options)]);
 
   return ref;
 }

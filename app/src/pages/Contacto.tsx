@@ -146,7 +146,7 @@ function ContactInfo() {
           </div>
         </div>
         <a
-          href="https://wa.me/51999999999"
+          href="https://wa.me/51932562950"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 bg-[#25D366] text-white font-body font-semibold text-[14px] px-5 py-2.5 rounded-lg hover:bg-[#128C7E] transition-colors"

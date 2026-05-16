@@ -105,7 +105,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
             {/* CTAs */}
             <div className="mt-8 flex flex-col gap-3">
               <a
-                href="https://wa.me/51999999999"
+                href="https://wa.me/51932562950"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-body font-semibold py-3.5 rounded-lg hover:bg-[#128C7E] transition-colors"

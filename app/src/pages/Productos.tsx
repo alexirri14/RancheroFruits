@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { memo, useState, type ReactNode } from 'react';
 import PageHero from '@/components/PageHero';
 import ProductModal from '@/components/ProductModal';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
@@ -6,14 +6,74 @@ import { hortalizas, frutas, tuberculos, getProductByName } from '@/data/product
 import type { Product } from '@/types';
 
 type Category = 'hortalizas' | 'frutas' | 'tuberculos';
+interface ProductCardProps {
+  name: string;
+  onClick: (name: string) => void;
+  className?: string;
+  children?: ReactNode;
+}
+
+const ProductCard = memo(({ name, onClick, className, children }: ProductCardProps) => {
+  return (
+    <button
+      onClick={() => onClick(name)}
+      className={className}
+    >
+      {children}
+    </button>
+  );
+});
 
 const categoryImages: Record<string, string> = {
-  'Aji amarillo': '/RancheroFruits/images/product-aji-amarillo.jpg',
+  //frutas
   'Arandanos': '/RancheroFruits/images/product-arandanos.jpg',
-  'Curcuma': '/RancheroFruits/images/product-curcuma.jpg',
   'Lucuma': '/RancheroFruits/images/product-lucuma.jpg',
-  'Maiz morado': '/RancheroFruits/images/product-maiz-morado.jpg',
   'Maracuya': '/RancheroFruits/images/product-maracuya.jpg',
+  'Granadilla': '/RancheroFruits/images/product-granadilla.jpg',
+  'Chirimoya': '/RancheroFruits/images/product-chirimoya.jpg',
+  'Guanabana': '/RancheroFruits/images/product-guanabana.jpeg',
+  'Platano de isla': '/RancheroFruits/images/product-platano-isla.png',
+  'Papaya': '/RancheroFruits/images/product-papaya.png',
+  'Pacae': '/RancheroFruits/images/product-pacae.jpg',
+  'Pepino dulce': '/RancheroFruits/images/product-pepino-dulce.png',
+  'Tumbo': '/RancheroFruits/images/product-tumbo.jpg',
+  'Tomate de arbol': '/RancheroFruits/images/product-tomate-arbol.jpg',
+  'Lulo': '/RancheroFruits/images/product-lulo.jpeg',
+  'Mamey': '/RancheroFruits/images/product-mamey.jpg',
+  'Aguaymanto': '/RancheroFruits/images/product-aguaymanto.jpg',
+  'Carambola': '/RancheroFruits/images/product-carambola.jpg',
+  'Cocona': '/RancheroFruits/images/product-cocona.jpg',
+  'Tuna': '/RancheroFruits/images/product-tuna.jpeg',
+  'Platano bizcocho': '/RancheroFruits/images/product-platano-bizcocho.jpg',
+  'Platano palillo': '/RancheroFruits/images/product-platano-palillo.jpg',
+  'Ciruela': '/RancheroFruits/images/product-ciruela.jpg',
+  //hortalizas
+  'Aji amarillo': '/RancheroFruits/images/product-aji-amarillo.jpg',
+  'Rocoto': '/RancheroFruits/images/product-rocoto.jpg',
+  'Locoto': '/RancheroFruits/images/product-locoto.jpg',
+  'Aji limo': '/RancheroFruits/images/product-aji-limo.jpg',
+  'Maiz choclo': '/RancheroFruits/images/product-maiz-choclo.jpg',
+  'Caigua': '/RancheroFruits/images/product-caigua.jpg',
+  'Aji panca': '/RancheroFruits/images/product-aji-panca.jpg',
+  'Aji mirasol': '/RancheroFruits/images/product-aji-mirasol.jpg',
+  'Zapallo loche': '/RancheroFruits/images/product-zapallo-loche.jpg',
+  'Zapallo macre': '/RancheroFruits/images/product-zapallo-macre.jpg',
+  'Hierba luisa': '/RancheroFruits/images/product-hierba-luisa.jpg',
+  'Huacatay': '/RancheroFruits/images/product-huacatay.jpg',
+  'Chincho': '/RancheroFruits/images/product-chincho.jpg',
+  'Cebolla roja': '/RancheroFruits/images/product-cebolla-roja.jpg',
+  'Maiz morado': '/RancheroFruits/images/product-maiz-morado.jpg',
+  //tuberculos
+  'Camote amarillo': '/RancheroFruits/images/product-camote-amarillo.jpg',
+  'Camote morado': '/RancheroFruits/images/product-camote-morado.jpg',
+  'Yacon': '/RancheroFruits/images/product-yacon.jpg',
+  'Olluco canario': '/RancheroFruits/images/product-olluco-canario.jpg',
+  'Olluco chispa': '/RancheroFruits/images/product-olluco-chispa.jpg',
+  'Oca': '/RancheroFruits/images/product-oca.jpg',
+  'Mushua': '/RancheroFruits/images/product-mushua.jpg',
+  'Yuca': '/RancheroFruits/images/product-yuca.jpg',
+  'Curcuma': '/RancheroFruits/images/product-curcuma.jpg',
+  'Jengibre': '/RancheroFruits/images/product-jengibre.jpg',
 };
 
 const getProductImage = (name: string): string => {
@@ -159,8 +219,9 @@ function ProductCategoriesSection() {
         {/* Product Grid */}
         <div ref={ref} className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
           {displayedProducts.map((name) => (
-            <button
+            <ProductCard
               key={name}
+              name = {name}
               onClick={() => handleProductClick(name)}
               className="bg-white rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(26,46,26,0.08)] hover:shadow-[0_8px_32px_rgba(26,46,26,0.12)] hover:-translate-y-1 transition-all duration-300 text-left cursor-pointer group"
             >
@@ -174,7 +235,7 @@ function ProductCategoriesSection() {
               <div className="p-4">
                 <h4 className="font-body font-semibold text-base text-[#1A2E1A]">{name}</h4>
               </div>
-            </button>
+            </ProductCard>
           ))}
         </div>
 

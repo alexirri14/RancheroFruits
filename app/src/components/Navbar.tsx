@@ -99,7 +99,7 @@ export default function Navbar() {
             {/* Desktop CTAs */}
             <div className="hidden lg:flex items-center gap-3">
               <a
-                href="https://wa.me/51999999999"
+                href="https://wa.me/51932562950"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-[#25D366] text-white text-sm font-body font-semibold px-5 py-2.5 rounded-full hover:bg-[#128C7E] transition-all duration-200 hover:scale-[1.02]"
@@ -153,7 +153,7 @@ export default function Navbar() {
           ))}
           <div className="flex flex-col items-center gap-4 mt-8">
             <a
-              href="https://wa.me/51999999999"
+              href="https://wa.me/51932562950"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-[#25D366] text-white font-body font-semibold px-8 py-3 rounded-full"
