@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MapPin, Mail, MessageCircle, Facebook, Instagram, Linkedin, Check } from 'lucide-react';
+import { MapPin, Mail, MessageCircle, Check } from 'lucide-react';
 import PageHero from '@/components/PageHero';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
@@ -80,7 +80,7 @@ function ContactForm() {
             value={formData.telefono}
             onChange={handleChange}
             className="w-full border-[1.5px] border-[#D4CFC4] rounded-lg px-4 py-3 text-[15px] font-body text-[#1A2E1A] placeholder:text-[#5C6B5C]/50 focus:border-[#C4A35A] focus:outline-none focus:shadow-[0_0_0_3px_rgba(196,163,90,0.15)] transition-all"
-            placeholder="+51 999 999 999"
+            placeholder="+51 932 562 950"
           />
         </div>
         <div>
@@ -134,7 +134,7 @@ function ContactInfo() {
         <h4 className="font-body font-semibold text-xl text-[#1A2E1A] mb-2">
           WhatsApp
         </h4>
-        <p className="text-[17px] font-body text-[#1A2E1A] mb-1">+51 999 999 999</p>
+        <p className="text-[17px] font-body text-[#1A2E1A] mb-1">+51 932 562 950</p>
         <p className="text-[15px] font-body text-[#5C6B5C] mb-4">
           Escanea el codigo QR o haz clic para chatear
         </p>
@@ -176,25 +176,7 @@ function ContactInfo() {
           </h4>
         </div>
         <p className="text-[17px] font-body text-[#1A2E1A]">Paijan, La Libertad, Peru</p>
-      </div>
-
-      {/* Social Media */}
-      <div>
-        <h4 className="font-body font-semibold text-lg text-[#1A2E1A] mb-4">
-          Siguenos
-        </h4>
-        <div className="flex items-center gap-3">
-          {[Facebook, Instagram, Linkedin].map((Icon, i) => (
-            <a
-              key={i}
-              href="#"
-              className="w-10 h-10 bg-[#E8F0E8] rounded-full flex items-center justify-center text-[#1A2E1A] hover:bg-[#C4A35A] hover:text-white transition-all duration-200"
-            >
-              <Icon size={18} />
-            </a>
-          ))}
-        </div>
-      </div>
+      </div>    
     </div>
   );
 }

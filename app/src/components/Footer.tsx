@@ -1,7 +1,6 @@
 import { Link } from 'react-router';
-import { MapPin, Mail, Phone, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { MapPin, Mail, Phone} from 'lucide-react';  
 import { useScrollReveal } from '@/hooks/useScrollReveal';
-
 export default function Footer() {
   const ref = useScrollReveal<HTMLDivElement>({ y: 20, stagger: 0.1 });
 
@@ -70,19 +69,8 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3 text-[15px] font-body text-[#B8C4B8]">
                 <Phone size={16} className="text-[#C4A35A] shrink-0" />
-                +51 999 999 999
+                +51 932 562 950
               </div>
-            </div>
-            <div className="flex items-center gap-4 mt-6">
-              {[Facebook, Instagram, Linkedin].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="text-[#B8C4B8] hover:text-[#C4A35A] transition-colors duration-200"
-                >
-                  <Icon size={20} />
-                </a>
-              ))}
             </div>
           </div>
         </div>
