@@ -58,12 +58,9 @@ function AboutSection() {
               alt="Instalaciones de RancheroFruits"
               className="w-full aspect-[4/3] object-cover rounded-xl shadow-[0_8px_32px_rgba(26,46,26,0.12)]"
             />
-            <div className="absolute bottom-4 right-4 bg-[#C4A35A] text-white text-[11px] font-body font-medium uppercase tracking-[0.04em] px-4 py-2 rounded-lg">
-              Desde 2015
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 }
