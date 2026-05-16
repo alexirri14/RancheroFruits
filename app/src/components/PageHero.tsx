@@ -5,7 +5,7 @@ interface PageHeroProps {
   backgroundImage?: string;
 }
 
-export default function PageHero({ title, breadcrumb, backgroundImage = './images/hero-slide-1.jpg' }: PageHeroProps) {
+export default function PageHero({ title, breadcrumb, backgroundImage = './images/logo-1.jpeg' }: PageHeroProps) {
   return (
     <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
       <img
